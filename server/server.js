@@ -1,11 +1,11 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-
+import imagesRoutes from "./routes/imagesRoutes.js";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import passport from "passport";
-import configureJwtStrategy from "./passport-config.js";
+/* import configureJwtStrategy from "./passport-config.js"; */
 import { fileURLToPath } from "url";
 import path, { dirname } from "path";
 
@@ -30,19 +30,22 @@ app.use(
 dotenv.config();
 app.use(cookieParser());
 app.use(passport.initialize());
-configureJwtStrategy(passport);
+/* configureJwtStrategy(passport); */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const port = process.env.PORT || 3001;
 
-app.use("/user", userRoutes);
-app.use("/api", stepsRoutes);
+app.use("/api", imagesRoutes);
 
 console.log(
   "Connecting to the database. Put the kettle on while you wait... 🫖"
 );
 
-mongoose
+app.listen(port, () =>
+  console.log(`The server is listening on port ${port} ... 🐒`)
+);
+
+/* mongoose
   .connect(
     `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}.${process.env.DB_NAME}?retryWrites=true&w=majority`,
     { useNewUrlParser: true, useUnifiedTopology: true }
@@ -74,4 +77,4 @@ mongoose
   })
   .catch((error) => {
     console.log(error, "Database did not connect! ☹️❌");
-  });
+  }); */
