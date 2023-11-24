@@ -8,10 +8,25 @@ import passport from "passport";
 /* import configureJwtStrategy from "./passport-config.js"; */
 import { fileURLToPath } from "url";
 import path, { dirname } from "path";
+import http from "http";
+import { Server } from "socket.io";
 
 import fs from "fs";
 
 const app = express();
+
+app.use(cors());
+
+const server = http.createServer(app);
+const io = new Server(server, {
+  cors: {
+    origin: "http://localhost:3000",
+  },
+});
+
+io.on("connection", (socket) => {
+  console.log("A user connected");
+});
 
 app.use(
   cors({
@@ -41,11 +56,14 @@ console.log(
   "Connecting to the database. Put the kettle on while you wait... 🫖"
 );
 
-app.listen(port, () =>
+server.listen(port, () =>
   console.log(`The server is listening on port ${port} ... 🐒`)
 );
 
-/* mongoose
+/* console.log(
+  "Connecting to the database. Put the kettle on while you wait... 🫖"
+);
+mongoose
   .connect(
     `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}.${process.env.DB_NAME}?retryWrites=true&w=majority`,
     { useNewUrlParser: true, useUnifiedTopology: true }
@@ -77,4 +95,6 @@ app.listen(port, () =>
   })
   .catch((error) => {
     console.log(error, "Database did not connect! ☹️❌");
-  }); */
+  });
+ */
+export { io };

@@ -1,6 +1,9 @@
 import { Router } from "express";
 import multer from "multer";
-import { uploadZippedFolders } from "../controllers/imagesController.js";
+import {
+  downloadZippedFolder,
+  uploadZippedFolders,
+} from "../controllers/imagesController.js";
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -23,5 +26,7 @@ router.post(
   ]),
   uploadZippedFolders
 );
+
+router.post("/download", downloadZippedFolder);
 
 export default router;

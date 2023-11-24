@@ -29,7 +29,7 @@ export async function createExcelWorkbook(mismatchResults) {
 
   const outputFolderPath = path.join(
     __dirname,
-    `../uploadedImages/mismatches_tables`
+    `../uploadedImages/result/mismatches_tables`
   );
 
   if (!fs.existsSync(outputFolderPath)) {

@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./UploadImages.css";
 import useFileDownloader from "../../utils/useFileDownload";
-import io from "socket.io-client";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import SocketComponent from "../Socketcomponent/SocketComponent";
 
 const UploadImages = () => {
   const { downloadFile, error } = useFileDownloader();
@@ -53,16 +55,6 @@ const UploadImages = () => {
     setFolder2Zip(event.target.files[0]);
   };
 
-  const socket = io(process.env.REACT_APP_BASE_URL);
-
-  socket.on("progress", (message) => {
-    console.log( message);
-  });
-
-  socket.on("disconnect", () => {
-    console.log("Disconnected from server");
-  });
-
   const handleUpload = async () => {
     setIsLoading(true);
 
@@ -95,6 +87,10 @@ const UploadImages = () => {
         });
 
       setIsLoading(false);
+
+      toast.success("Comparison Complete", {
+        autoClose: 3000,
+      });
       console.log("Upload complete");
     } catch (error) {
       console.error("Upload error:", error);
@@ -154,6 +150,7 @@ const UploadImages = () => {
       </button>
       {isLoading && <p>Uploading...</p>}
       {error && <div>Error: {error}</div>}
+      <SocketComponent />
     </div>
   );
 };

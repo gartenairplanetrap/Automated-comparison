@@ -8,7 +8,13 @@ import { findSubfolderWithImages } from "./findSubfolderWithImages.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export async function applyStencilsToImage(folderPath, outputImagePath) {
+export async function applyStencilsToImage(
+  folderPath,
+  outputImagePath,
+  screenSize,
+  type,
+  prl
+) {
   try {
     const inputImage = await findSubfolderWithImages(folderPath);
 
@@ -21,7 +27,7 @@ export async function applyStencilsToImage(folderPath, outputImagePath) {
 
     await Promise.all(
       inputImageFiles.map(async (image) => {
-        const stencils = findStencils(image, "12.9", "rhd");
+        const stencils = findStencils(image, screenSize, type, prl);
         if (stencils.length > 0) {
           const imagePath = path.join(inputImage, image);
 
@@ -53,7 +59,7 @@ async function applyStencilsToSingleImage(
       for (const item of stencil.items) {
         // Create a temporary object to store converted values
         const numericItem = {};
-        console.log(numericItem);
+
         for (const property in item) {
           if (property !== "color" && typeof item[property] === "string") {
             numericItem[property] = Number(item[property]);
@@ -82,15 +88,17 @@ async function applyStencilsToSingleImage(
   }
 }
 
-function findStencils(itemName, screenSize, type) {
+function findStencils(itemName, screenSize, type, prl) {
   // Filter stencils based on the provided criteria
+
   const itemNameWithoutExtension = itemName.split(".").slice(0, -1);
 
   const foundStencils = data.filter(
     (stencil) =>
       stencil.itemName === itemNameWithoutExtension[0] &&
-      stencil.screenSize === screenSize &&
-      stencil.type === type
+      stencil.screenSize == screenSize &&
+      stencil.type === type.toLowerCase() &&
+      stencil.prl === prl.toLowerCase()
   );
 
   return foundStencils;

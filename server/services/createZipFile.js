@@ -3,14 +3,11 @@ import archiver from "archiver";
 
 // Function to create a zip file of a folder
 export const outputZippedFolders =
-  "C:/Users/WaseemAltinawi/skinning/AutomatedComparison/server/uploadedImages/zippedFolders/output.zip";
+  "C:/Users/WaseemAltinawi/skinning/AutomatedComparison/server/uploadedImages/zippedFolders/";
 
 export async function createZipFile(folderPath, outputZipPath) {
   return new Promise((resolve, reject) => {
     const output = fs.createWriteStream(outputZipPath);
-
-    console.log("folderPath", folderPath);
-    console.log("outputZipPath", outputZipPath);
 
     output.on("error", (err) => {
       console.error("Error creating output stream:", err);
@@ -39,7 +36,6 @@ export async function createZipFile(folderPath, outputZipPath) {
       console.log("Archive finished");
       resolve(outputZipPath);
     });
-
     archive.pipe(output);
     archive.directory(folderPath, false); // Add the contents of the folder to the zip file
 

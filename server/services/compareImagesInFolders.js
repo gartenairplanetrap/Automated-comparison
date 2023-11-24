@@ -3,12 +3,15 @@ import path from "path";
 import { fileURLToPath } from "url";
 import resemble from "resemblejs";
 import { findSubfolderWithImages } from "../services/findSubfolderWithImages.js";
-import { createZipFile, outputZippedFolders } from "./createZipFile.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export async function compareImagesInFolders(folder1Path, folder2Path) {
+export async function compareImagesInFolders(
+  folder1Path,
+  folder2Path,
+  progressCallback
+) {
   const subfolder1Path = await findSubfolderWithImages(folder1Path);
   const subfolder2Path = await findSubfolderWithImages(folder2Path);
 
@@ -28,7 +31,9 @@ export async function compareImagesInFolders(folder1Path, folder2Path) {
   ).length;
   totalImages += imagesToCompare;
 
-  console.log(`Found ${imagesToCompare} images to compare in subfolders.`);
+  progressCallback(`Start comparing ${imagesToCompare} images`);
+
+  console.log(`Found ${imagesToCompare} images to compare.`);
 
   const comparisons = subfolder1Files
     .filter((file) => subfolder2Files.has(file))
@@ -61,7 +66,6 @@ export async function compareImagesInFolders(folder1Path, folder2Path) {
       // Save comparison image (diff image) in a third folder
       fs.writeFileSync(outputImagePath, comparison.getBuffer());
 
-      createZipFile(outputFolderPath, outputZippedFolders);
       // Collect mismatch results
       if (comparison.rawMisMatchPercentage > 0) {
         mismatchResults.push({
