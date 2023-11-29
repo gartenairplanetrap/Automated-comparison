@@ -7,14 +7,14 @@
     "itemName": "NAV_MAP_TRIPVIEW_VIEW",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -58,14 +58,14 @@
     "itemName": "NAV_MAP_TRIPVIEW_VIEW_minimized",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -102,14 +102,14 @@
     "itemName": "PU_ROUTE_DETAILS",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -174,14 +174,14 @@
     "itemName": "VIEW_NAV_MAIN_NEW_DEST_SLDE_VIEW",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -246,14 +246,14 @@
     "itemName": "VIEW_NAV_MAIN_PREDICTIVE",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -346,14 +346,14 @@
     "itemName": "NAV_MAP_TRIPVIEW_VIEW",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -397,14 +397,14 @@
     "itemName": "NAV_MAP_TRIPVIEW_VIEW_minimized",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -441,14 +441,14 @@
     "itemName": "PU_ROUTE_DETAILS",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -513,14 +513,14 @@
     "itemName": "VIEW_NAV_MAIN_NEW_DEST_SLDE_VIEW",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -585,14 +585,14 @@
     "itemName": "VIEW_NAV_MAIN_PREDICTIVE",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -685,14 +685,14 @@
     "itemName": "NAV_MAP_TRIPVIEW_VIEW",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -736,14 +736,14 @@
     "itemName": "NAV_MAP_TRIPVIEW_VIEW_minimized",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -780,14 +780,14 @@
     "itemName": "PU_ROUTE_DETAILS",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -852,14 +852,14 @@
     "itemName": "VIEW_NAV_MAIN_NEW_DEST_SLDE_VIEW",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -924,14 +924,14 @@
     "itemName": "VIEW_NAV_MAIN_PREDICTIVE",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": 92,
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": 136,
         "top": 580,
         "left": 0,
@@ -1024,14 +1024,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -1047,14 +1047,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -1105,14 +1105,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -1134,7 +1134,7 @@
       },
       {
         "width": "15",
-        "height": "150",
+        "height": "80",
         "top": "140",
         "left": "720",
         "color": "#000000"
@@ -1156,14 +1156,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -1221,14 +1221,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -1293,14 +1293,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -1323,14 +1323,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -1346,14 +1346,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -1404,14 +1404,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -1455,14 +1455,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -1520,14 +1520,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -1585,14 +1585,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -1615,15 +1615,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -1638,15 +1638,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -1696,15 +1696,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -1740,15 +1740,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -1805,15 +1805,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -1835,15 +1835,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -1907,15 +1907,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -2014,14 +2014,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -2072,14 +2072,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -2101,7 +2101,7 @@
       },
       {
         "width": "15",
-        "height": "150",
+        "height": "80",
         "top": "140",
         "left": "720",
         "color": "#000000"
@@ -2116,14 +2116,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -2181,14 +2181,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "387",
         "left": 0,
@@ -2253,14 +2253,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -2297,14 +2297,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -2320,14 +2320,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -2378,14 +2378,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -2450,15 +2450,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -2473,15 +2473,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -2531,15 +2531,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -2575,15 +2575,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -2647,14 +2647,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -2670,14 +2670,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -2728,14 +2728,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -2779,14 +2779,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -2844,14 +2844,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -2916,14 +2916,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -2974,14 +2974,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -2997,14 +2997,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -3055,14 +3055,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -3084,7 +3084,7 @@
       },
       {
         "width": "15",
-        "height": "150",
+        "height": "80",
         "top": "140",
         "left": "720",
         "color": "#000000"
@@ -3106,14 +3106,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -3171,14 +3171,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -3243,14 +3243,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -3301,14 +3301,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -3352,14 +3352,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -3417,14 +3417,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -3482,14 +3482,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -3512,15 +3512,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -3535,15 +3535,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -3593,15 +3593,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -3637,15 +3637,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -3702,15 +3702,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -3732,15 +3732,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -3804,15 +3804,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -3911,14 +3911,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -3969,14 +3969,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -3998,7 +3998,7 @@
       },
       {
         "width": "15",
-        "height": "150",
+        "height": "80",
         "top": "140",
         "left": "720",
         "color": "#000000"
@@ -4013,14 +4013,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -4078,14 +4078,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "387",
         "left": 0,
@@ -4150,14 +4150,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -4194,14 +4194,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -4217,14 +4217,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -4275,14 +4275,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -4347,15 +4347,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -4370,15 +4370,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -4428,15 +4428,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -4472,15 +4472,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -4544,14 +4544,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -4567,14 +4567,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -4625,14 +4625,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -4676,14 +4676,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -4741,14 +4741,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -4813,14 +4813,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "50",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "480",
         "left": 0,
@@ -4871,14 +4871,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -4894,14 +4894,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -4952,14 +4952,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -4981,7 +4981,7 @@
       },
       {
         "width": "15",
-        "height": "150",
+        "height": "80",
         "top": "140",
         "left": "720",
         "color": "#000000"
@@ -5003,14 +5003,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -5068,14 +5068,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -5140,15 +5140,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -5177,15 +5177,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -5207,15 +5207,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -5258,15 +5258,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -5288,15 +5288,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -5318,15 +5318,15 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -5355,14 +5355,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -5392,14 +5392,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -5436,14 +5436,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -5466,14 +5466,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -5510,14 +5510,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -5540,14 +5540,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -5570,14 +5570,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -5614,14 +5614,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -5665,14 +5665,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -5695,14 +5695,14 @@
     "type": "arabic",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -5725,15 +5725,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -5755,15 +5755,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -5785,15 +5785,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -5815,15 +5815,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -5845,15 +5845,15 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -5903,14 +5903,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -5933,14 +5933,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -5977,14 +5977,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -6028,14 +6028,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -6072,14 +6072,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -6102,14 +6102,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -6139,14 +6139,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -6169,14 +6169,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -6199,14 +6199,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -6257,14 +6257,14 @@
     "type": "rhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,
@@ -6287,15 +6287,15 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -6324,15 +6324,15 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -6382,15 +6382,15 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -6440,15 +6440,15 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -6470,15 +6470,15 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "70",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
-        "height": "150",
+        "width": 1120,
+        "height": "80",
         "top": "555",
         "left": 0,
         "color": "#000000"
@@ -6500,14 +6500,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -6530,14 +6530,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "60",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "160",
         "top": "475",
         "left": 0,
@@ -6560,14 +6560,14 @@
     "type": "lhd",
     "items": [
       {
-        "width": 2240,
+        "width": 1120,
         "height": "45",
         "top": 0,
         "left": 0,
         "color": "#000000"
       },
       {
-        "width": 2240,
+        "width": 1120,
         "height": "335",
         "top": "385",
         "left": 0,

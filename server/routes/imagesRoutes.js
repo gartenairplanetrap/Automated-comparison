@@ -1,7 +1,10 @@
 import { Router } from "express";
 import multer from "multer";
 import {
+  compareImages,
+  createStencils,
   downloadZippedFolder,
+  getStencils,
   uploadZippedFolders,
 } from "../controllers/imagesController.js";
 
@@ -16,6 +19,9 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
+const compareStorage = multer.memoryStorage();
+const compareUpload = multer({ storage: compareStorage });
+
 const router = Router();
 
 router.post(
@@ -27,6 +33,18 @@ router.post(
   uploadZippedFolders
 );
 
+router.post(
+  "/compare-images",
+  compareUpload.fields([
+    { name: "image1", maxCount: 1 },
+    { name: "image2", maxCount: 1 },
+  ]),
+  compareImages
+);
+
 router.post("/download", downloadZippedFolder);
+
+router.get("/stencils", getStencils);
+router.post("/create-stencil", createStencils);
 
 export default router;

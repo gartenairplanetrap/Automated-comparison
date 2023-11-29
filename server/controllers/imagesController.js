@@ -1,5 +1,7 @@
 import fs from "fs";
 import path from "path";
+import Jimp from "jimp";
+import resemble from "resemblejs";
 import { fileURLToPath } from "url";
 import { createExcelWorkbook } from "../services/tableController.js";
 import { applyStencilsToImage } from "../services/stencil.js";
@@ -12,6 +14,7 @@ import {
 } from "../services/createZipFile.js";
 
 import { io } from "../server.js";
+import { Stencil } from "../models/stencil.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -137,4 +140,88 @@ export function downloadZippedFolder(req, res) {
       res.status(500).send("Internal Server Error");
     }
   });
+}
+
+export async function createStencils(req, res) {
+  const { label, screenSize, itemName, type, prl, items } = req.body;
+
+  try {
+    // Find a stencil with matching attributes or create one if not found
+    const existingStencil = await Stencil.findOneAndUpdate(
+      { label, screenSize, itemName, type, prl },
+      { items },
+      { new: true, upsert: true } // Creates a new one if not found
+    );
+
+    return res
+      .status(200)
+      .json({ message: "Stencil updated or created", data: existingStencil });
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+}
+
+/* export async function createStencils(req, res) {
+  try {
+    const createStencil = await Stencil.create(req.body);
+    return res.status(201).json({ message: "Stencil created" });
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+} */
+
+export async function getStencils(req, res) {
+  try {
+    const stencils = await Stencil.find({});
+    return res.status(200).json({ message: "All Data Found", stencils });
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+}
+
+export async function compareImages(req, res) {
+  const img1 = req.files["image1"][0].buffer;
+
+  const img2 = req.files["image2"][0].buffer;
+
+  const image1 = await Jimp.read(img1);
+  const image2 = await Jimp.read(img2);
+
+  const masks = req.body.masks;
+  console.log(masks);
+  if (Array.isArray(masks)) {
+    masks.map((item) => {
+      // Create a temporary object to store converted values
+      console.log("itemmmmm", item);
+      const numericItem = {};
+      for (const property in item) {
+        if (property !== "color" && typeof item[property] === "string") {
+          numericItem[property] = Number(item[property]);
+        } else {
+          numericItem[property] = item[property];
+        }
+      }
+
+      const { width, height, top, left, color } = numericItem;
+
+      // Create a mask for the specified area with the given color
+      const mask = new Jimp(width, height, color);
+
+      // Composite the mask onto the image
+      image1.composite(mask, left, top);
+      image2.composite(mask, left, top);
+    });
+  }
+  const processedImageBuffer1 = await image1.getBufferAsync(Jimp.MIME_PNG);
+  const processedImageBuffer2 = await image2.getBufferAsync(Jimp.MIME_PNG);
+
+  // Perform comparison using resemble
+  const comparison = await new Promise((resolve, reject) => {
+    resemble(processedImageBuffer1)
+      .compareTo(processedImageBuffer2)
+      .scaleToSameSize()
+      .onComplete(resolve);
+  });
+
+  console.log(comparison);
 }

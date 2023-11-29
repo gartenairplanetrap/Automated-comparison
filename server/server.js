@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import imagesRoutes from "./routes/imagesRoutes.js";
+import userRoutes from "./routes/user.js";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import passport from "passport";
@@ -19,9 +20,7 @@ app.use(cors());
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: {
-    origin: "http://localhost:3000",
-  },
+  cors: {},
 });
 
 io.on("connection", (socket) => {
@@ -51,16 +50,17 @@ const __dirname = dirname(__filename);
 const port = process.env.PORT || 3001;
 
 app.use("/api", imagesRoutes);
+app.use("/user", userRoutes);
 
-console.log(
+/* console.log(
   "Connecting to the database. Put the kettle on while you wait... 🫖"
 );
 
 server.listen(port, () =>
   console.log(`The server is listening on port ${port} ... 🐒`)
 );
-
-/* console.log(
+ */
+console.log(
   "Connecting to the database. Put the kettle on while you wait... 🫖"
 );
 mongoose
@@ -89,12 +89,12 @@ mongoose
       res.send("Welcome to my API!");
     });
 
-    app.listen(port, () =>
+    server.listen(port, () =>
       console.log(`The server is listening on port ${port} ... 🐒`)
     );
   })
   .catch((error) => {
     console.log(error, "Database did not connect! ☹️❌");
   });
- */
+
 export { io };

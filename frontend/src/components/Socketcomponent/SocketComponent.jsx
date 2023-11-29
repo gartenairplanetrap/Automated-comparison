@@ -4,8 +4,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const SocketComponent = () => {
-  const [latestToast, setLatestToast] = useState(null);
-
   useEffect(() => {
     const socket = io(process.env.REACT_APP_BASE_URL);
 
@@ -39,7 +37,7 @@ const SocketComponent = () => {
 
   return (
     <div>
-      <ToastContainer />
+      <ToastContainer pauseOnFocusLoss={false} />
     </div>
   );
 };

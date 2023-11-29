@@ -13,7 +13,7 @@ const useFileDownloader = () => {
           fileName,
         },
         {
-          responseType: "blob", // Specify response type as blob to handle binary data
+          responseType: "blob", // to handle binary data
         }
       );
 
@@ -21,11 +21,10 @@ const useFileDownloader = () => {
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement("a");
       link.href = url;
-      link.setAttribute("download", fileName); // Set the file name for download
+      link.setAttribute("download", fileName);
       document.body.appendChild(link);
       link.click();
 
-      // Clean up: remove the temporary anchor element
       link.parentNode.removeChild(link);
     } catch (err) {
       setError("Error downloading file");
