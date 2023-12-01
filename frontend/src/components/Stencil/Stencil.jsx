@@ -22,6 +22,9 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
   const { setMasksContext } = useContext(StencilContext);
   const [comparedImage, setComparedImage] = useState("");
   const handleClick = useSingleComparisonDownload();
+  const [selectedBoxIndex, setSelectedBoxIndex] = useState(null);
+  const [selectedBoxColor, setSelectedBoxColor] = useState("#000000");
+
   const initialMaskState = {
     width: 200,
     height: 150,
@@ -104,6 +107,31 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
     setMasksContext(masks);
   }, [masks]);
 
+  const handleBoxClick = (index) => {
+    setSelectedBoxIndex(index);
+    setSelectedBoxColor(masks[index].color);
+  };
+
+  const handleKeyPress = (event, index) => {
+    if (event.key === "Delete") {
+      handleRemoveBox(index);
+    }
+  };
+
+  const handleColorChange = (color, index) => {
+    if (selectedBoxIndex !== null) {
+      setMasks((prevMasks) => {
+        const updatedMasks = [...prevMasks];
+        updatedMasks[selectedBoxIndex] = {
+          ...updatedMasks[selectedBoxIndex],
+          color: color,
+        };
+        return updatedMasks;
+      });
+    }
+    setSelectedBoxColor(color);
+  };
+
   return (
     <div className={`main-container ${theme}`}>
       <div className=" icon-container">
@@ -117,6 +145,12 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
         <button className="icon" style={{}} onClick={handleCompareImages}>
           <FaCodeCompare />
         </button>
+        <input
+          type="color"
+          value={selectedBoxColor}
+          onChange={(e) => handleColorChange(e.target.value, selectedBoxIndex)}
+          style={{ width: "40px", height: "40px" }}
+        />
         {comparedImage && (
           <button
             className="icon"
@@ -187,6 +221,9 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
                 bounds="parent"
                 style={{ backgroundColor: box.color }}
                 key={index}
+                onClick={() => handleBoxClick(index)}
+                onKeyDown={(e) => handleKeyPress(e, index)}
+                tabIndex={0}
               ></Rnd>
             ))}
           </div>
@@ -226,6 +263,9 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
                 bounds="parent"
                 style={{ backgroundColor: box.color }}
                 key={index}
+                onClick={() => handleBoxClick(index)}
+                onKeyDown={(e) => handleKeyPress(e, index)}
+                tabIndex={0}
               ></Rnd>
             ))}
           </div>
