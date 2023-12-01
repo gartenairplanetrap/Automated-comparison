@@ -43,7 +43,7 @@ export async function createExcelWorkbook(mismatchResults) {
 
   await workbook.xlsx.writeFile(outputFilePath);
 
-  const fileContents = fs.readFileSync(outputFilePath);
+  const fileContents = await fs.promises.readFile(outputFilePath);
 
   return fileContents;
 }

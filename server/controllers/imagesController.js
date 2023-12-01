@@ -190,7 +190,7 @@ export async function compareImages(req, res) {
     const image2 = await Jimp.read(img2);
 
     const masks = JSON.parse(req.body.masks);
-    console.log(masks);
+
     const mismatchResults = [];
     masks.map((item) => {
       const numericItem = {};
@@ -211,8 +211,11 @@ export async function compareImages(req, res) {
       image1.composite(mask, left, top);
       image2.composite(mask, left, top);
     });
-    const processedImageBuffer1 = await image1.getBufferAsync(Jimp.MIME_PNG);
-    const processedImageBuffer2 = await image2.getBufferAsync(Jimp.MIME_PNG);
+
+    const [processedImageBuffer1, processedImageBuffer2] = await Promise.all([
+      image1.getBufferAsync(Jimp.MIME_PNG),
+      image2.getBufferAsync(Jimp.MIME_PNG),
+    ]);
 
     // Perform comparison using resemble
     const comparison = await new Promise((resolve, reject) => {
@@ -233,10 +236,10 @@ export async function compareImages(req, res) {
     const table = await createExcelWorkbook(mismatchResults);
 
     res.status(200).json({
-      imageName: req.files["image1"][0].originalname,
       contentType: req.files["image1"][0].mimetype,
       tableData: table,
       imageUrl,
+      mismatchResults,
     });
   } catch (error) {
     res.status(500).json({ error: "Error fetching image" });

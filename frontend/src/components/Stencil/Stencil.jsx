@@ -13,12 +13,15 @@ import { StencilContext } from "../Context/StencilContext/StencilContext";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 import { FaCodeCompare } from "react-icons/fa6";
+import { AiOutlineDownload } from "react-icons/ai";
+import { IoMdDownload } from "react-icons/io";
+import useSingleComparisonDownload from "../../utils/useSingleComparisonDownload";
 
 const Stencil = ({ image1, image2, img1, img2 }) => {
   const { theme } = useContext(ThemeContext);
   const { setMasksContext } = useContext(StencilContext);
   const [comparedImage, setComparedImage] = useState("");
-
+  const handleClick = useSingleComparisonDownload();
   const initialMaskState = {
     width: 200,
     height: 150,
@@ -82,7 +85,13 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
       if (response.status === 200) {
         console.log("response", response);
 
-        setComparedImage(response.data.imageUrl);
+        setComparedImage({
+          image: response.data.imageUrl,
+          excelFile: response.data.tableData.data,
+          imageName: response.data.mismatchResults[0].imageName,
+          mismatchPercentage:
+            response.data.mismatchResults[0].mismatchPercentage,
+        });
       } else {
         throw new Error("Failed to compare images");
       }
@@ -100,18 +109,27 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
       <div className=" icon-container">
         <button
           className="icon"
-          style={{ color: "green" }}
+          style={{ color: "blue" }}
           onClick={handleAddBox}
         >
           <IoMdAddCircle />
         </button>
-        <button
-          className="icon"
-          style={{ color: "green", marginTop: "2rem" }}
-          onClick={handleCompareImages}
-        >
+        <button className="icon" style={{}} onClick={handleCompareImages}>
           <FaCodeCompare />
         </button>
+        {comparedImage && (
+          <button
+            className="icon"
+            style={{ color: "green" }}
+            onClick={handleClick(
+              comparedImage.image,
+              comparedImage.imageName,
+              comparedImage.mismatchPercentage
+            )}
+          >
+            <IoMdDownload />
+          </button>
+        )}
       </div>
       <StencilsLists setStencil={setMasks} />
       {image1 && image2 && (
@@ -214,7 +232,21 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
         </div>
       )}
       <button onClick={handleCompareImages}>Compare Images</button>
-      {comparedImage && <img src={comparedImage} alt="Compared Image" />}
+      {comparedImage && (
+        <div>
+          <h2>{comparedImage.mismatchPercentage.toFixed(2)}</h2>
+          <img src={comparedImage.image} alt="Compared Image" />
+          <button
+            onClick={handleClick(
+              comparedImage.image,
+              comparedImage.imageName,
+              comparedImage.mismatchPercentage
+            )}
+          >
+            Download Result
+          </button>
+        </div>
+      )}
       <ToastContainer pauseOnFocusLoss={false} />
     </div>
   );
