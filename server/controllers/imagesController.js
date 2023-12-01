@@ -16,6 +16,8 @@ import {
 import { io } from "../server.js";
 import { Stencil } from "../models/stencil.js";
 
+import sharp from "sharp";
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -180,19 +182,17 @@ export async function getStencils(req, res) {
 }
 
 export async function compareImages(req, res) {
-  const img1 = req.files["image1"][0].buffer;
+  try {
+    const img1 = req.files["image1"][0].buffer;
+    const img2 = req.files["image2"][0].buffer;
 
-  const img2 = req.files["image2"][0].buffer;
+    const image1 = await Jimp.read(img1);
+    const image2 = await Jimp.read(img2);
 
-  const image1 = await Jimp.read(img1);
-  const image2 = await Jimp.read(img2);
-
-  const masks = req.body.masks;
-  console.log(masks);
-  if (Array.isArray(masks)) {
+    const masks = JSON.parse(req.body.masks);
+    console.log(masks);
+    const mismatchResults = [];
     masks.map((item) => {
-      // Create a temporary object to store converted values
-      console.log("itemmmmm", item);
       const numericItem = {};
       for (const property in item) {
         if (property !== "color" && typeof item[property] === "string") {
@@ -211,17 +211,34 @@ export async function compareImages(req, res) {
       image1.composite(mask, left, top);
       image2.composite(mask, left, top);
     });
+    const processedImageBuffer1 = await image1.getBufferAsync(Jimp.MIME_PNG);
+    const processedImageBuffer2 = await image2.getBufferAsync(Jimp.MIME_PNG);
+
+    // Perform comparison using resemble
+    const comparison = await new Promise((resolve, reject) => {
+      resemble(processedImageBuffer1)
+        .compareTo(processedImageBuffer2)
+        .scaleToSameSize()
+        .onComplete(resolve);
+    });
+    const result = comparison.getBuffer().toString("base64");
+    const imageUrl = `data:image/png;base64,${result}`;
+    if (comparison.rawMisMatchPercentage > 0) {
+      mismatchResults.push({
+        imageName: req.files["image1"][0].originalname,
+        mismatchPercentage: comparison.rawMisMatchPercentage,
+      });
+    }
+
+    const table = await createExcelWorkbook(mismatchResults);
+
+    res.status(200).json({
+      imageName: req.files["image1"][0].originalname,
+      contentType: req.files["image1"][0].mimetype,
+      tableData: table,
+      imageUrl,
+    });
+  } catch (error) {
+    res.status(500).json({ error: "Error fetching image" });
   }
-  const processedImageBuffer1 = await image1.getBufferAsync(Jimp.MIME_PNG);
-  const processedImageBuffer2 = await image2.getBufferAsync(Jimp.MIME_PNG);
-
-  // Perform comparison using resemble
-  const comparison = await new Promise((resolve, reject) => {
-    resemble(processedImageBuffer1)
-      .compareTo(processedImageBuffer2)
-      .scaleToSameSize()
-      .onComplete(resolve);
-  });
-
-  console.log(comparison);
 }

@@ -17,7 +17,7 @@ import { FaCodeCompare } from "react-icons/fa6";
 const Stencil = ({ image1, image2, img1, img2 }) => {
   const { theme } = useContext(ThemeContext);
   const { setMasksContext } = useContext(StencilContext);
-  const [comparedImage, setComparedImage] = useState({});
+  const [comparedImage, setComparedImage] = useState("");
 
   const initialMaskState = {
     width: 200,
@@ -62,7 +62,7 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
       toast.Error("Please provide both images");
       return;
     }
-    console.log(img1);
+    setComparedImage("");
     const formData = new FormData();
     formData.append("image1", img1);
     formData.append("image2", img2);
@@ -80,8 +80,9 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
       );
 
       if (response.status === 200) {
-        const comparedImageData = response.data;
-        setComparedImage(URL.createObjectURL(comparedImageData));
+        console.log("response", response);
+
+        setComparedImage(response.data.imageUrl);
       } else {
         throw new Error("Failed to compare images");
       }
