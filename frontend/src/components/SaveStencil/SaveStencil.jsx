@@ -111,7 +111,7 @@ const SaveStencil = ({ stencil }) => {
         </label>
       </div>
 
-      <button className="btn-add-stencil" onClick={handleSave}>
+      <button className="btn" onClick={handleSave}>
         Save
       </button>
       <ToastContainer pauseOnFocusLoss={false} />

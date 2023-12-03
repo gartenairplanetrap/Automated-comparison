@@ -116,7 +116,8 @@ span {
   flex: 0.2; /* Adjust the span's width as needed */
 }
 
-.btn-add-stencil {
+.btn {
+  margin: 1rem;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -127,18 +128,18 @@ span {
   transition: background-color 0.3s ease;
 }
 
-.btn-add-stencil:hover {
+.btn:hover {
   background-color: #0056b3;
 }
 
-.btn-add-stencil:active {
+.btn:active {
   transform: scale(0.99);
 }
 .image-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .image-box {
@@ -146,6 +147,7 @@ span {
   position: relative;
   margin: 10px 0;
   background-color: #ccc;
+  display: flex;
 }
 
 .icon-container {

@@ -11,9 +11,15 @@ const UploadImages = () => {
   const [img1, setImg1] = useState(null);
   const [img2, setImg2] = useState(null);
 
+  const [image1Name, setImage1Name] = useState("");
+  const [image2Name, setImage2Name] = useState("");
+
   const handleImage1Upload = (e) => {
     const uploadedImage = e.target.files[0];
     setImg1(uploadedImage);
+    if (uploadedImage) {
+      setImage1Name(uploadedImage.name.split(".").slice(0, -1));
+    }
     const reader = new FileReader();
 
     reader.onload = () => {
@@ -28,6 +34,10 @@ const UploadImages = () => {
   const handleImage2Upload = (e) => {
     const uploadedImage = e.target.files[0];
     setImg2(uploadedImage);
+    if (uploadedImage) {
+      setImage2Name(uploadedImage.name.split(".").slice(0, -1));
+    }
+
     const reader = new FileReader();
 
     reader.onload = () => {
@@ -41,8 +51,33 @@ const UploadImages = () => {
 
   return (
     <div>
-      <input type="file" onChange={handleImage1Upload} accept="image/*" />
-      <input type="file" onChange={handleImage2Upload} accept="image/*" />
+      <div className="upload-container">
+        <label htmlFor="img1" className="custom-file-input">
+          Select Image 1
+        </label>
+        <input
+          className="file-input"
+          id="img1"
+          type="file"
+          onChange={handleImage1Upload}
+          accept="image/*"
+        />
+
+        <label htmlFor="img2" className="custom-file-input">
+          Select Image 2
+        </label>
+        <input
+          className="file-input"
+          id="img2"
+          type="file"
+          onChange={handleImage2Upload}
+          accept="image/*"
+        />
+      </div>
+      <div className="image-name">
+        <p>{image1Name}</p>
+        <p>{image2Name}</p>
+      </div>
       {image1 && image2 && (
         <Stencil image1={image1} image2={image2} img1={img1} img2={img2} />
       )}

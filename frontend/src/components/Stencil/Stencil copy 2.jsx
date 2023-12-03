@@ -61,7 +61,7 @@ const Stencil = ({ image1, image2 }) => {
   return (
     <div className="main-container">
       <div>
-        <button className="btn-add-stencil" onClick={handleAddBox}>
+        <button className="btn" onClick={handleAddBox}>
           Add Stencil
         </button>
       </div>

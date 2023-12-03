@@ -269,12 +269,18 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
           </div>
         </div>
       )}
-      <button onClick={handleCompareImages}>Compare Images</button>
+      <button className="btn" onClick={handleCompareImages}>
+        Compare Images
+      </button>
       {comparedImage && (
         <div>
-          <h2>Mismatch: {comparedImage.mismatchPercentage.toFixed(2)}</h2>
-          <img src={comparedImage.image} alt="Compared Image" />
+          <div>
+            <h2>Mismatch: {comparedImage.mismatchPercentage.toFixed(2)}</h2>
+            <img src={comparedImage.image} alt="Compared Image" />
+          </div>
+
           <button
+            className="btn"
             onClick={handleClick(
               comparedImage.image,
               comparedImage.imageName,

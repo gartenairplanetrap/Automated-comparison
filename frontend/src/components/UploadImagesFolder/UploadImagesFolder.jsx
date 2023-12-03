@@ -103,8 +103,27 @@ const UploadImagesFolder = () => {
   return (
     <div>
       <h1>Zipped Folder Upload</h1>
-      <input type="file" onChange={handleFolder1ZipChange} />
-      <input type="file" onChange={handleFolder2ZipChange} />
+      <div className="upload-container">
+        <label htmlFor="folder1" className="custom-file-input">
+          Select Folder 1 Zip
+        </label>
+        <input
+          id="folder1"
+          type="file"
+          className="file-input"
+          onChange={handleFolder1ZipChange}
+        />
+
+        <label htmlFor="folder2" className="custom-file-input">
+          Select Folder 2 Zip
+        </label>
+        <input
+          id="folder2"
+          type="file"
+          className="file-input"
+          onChange={handleFolder2ZipChange}
+        />
+      </div>
 
       <div className="upload-container">
         <select
