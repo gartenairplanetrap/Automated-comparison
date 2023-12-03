@@ -87,10 +87,8 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
 
       if (response.status === 200) {
         console.log("response", response);
-
         setComparedImage({
           image: response.data.imageUrl,
-          excelFile: response.data.tableData.data,
           imageName: response.data.mismatchResults[0].imageName,
           mismatchPercentage:
             response.data.mismatchResults[0].mismatchPercentage,
@@ -274,7 +272,7 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
       <button onClick={handleCompareImages}>Compare Images</button>
       {comparedImage && (
         <div>
-          <h2>{comparedImage.mismatchPercentage.toFixed(2)}</h2>
+          <h2>Mismatch: {comparedImage.mismatchPercentage.toFixed(2)}</h2>
           <img src={comparedImage.image} alt="Compared Image" />
           <button
             onClick={handleClick(

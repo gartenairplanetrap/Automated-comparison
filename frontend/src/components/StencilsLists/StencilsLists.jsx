@@ -2,8 +2,10 @@ import React, { useContext, useEffect, useState } from "react";
 
 import "./StencilsLists.css";
 import { StencilContext } from "../Context/StencilContext/StencilContext";
+import { ThemeContext } from "../Context/ThemeContext/ThemeContext";
 
 function StencilsLists({ setStencil }) {
+  const { theme } = useContext(ThemeContext);
   const { localData } = useContext(StencilContext);
   const [selectedLabel, setSelectedLabel] = useState("");
   const [selectedScreenSize, setSelectedScreenSize] = useState("");
@@ -49,8 +51,8 @@ function StencilsLists({ setStencil }) {
 
   return (
     <>
-      <div className="select">
-        <div>
+      <div className={`select ${theme}`}>
+        <div className={` ${theme}`}>
           <label>Select Label:</label>
           <select
             value={selectedLabel}
@@ -126,7 +128,11 @@ function StencilsLists({ setStencil }) {
       </div>
       <ul className="scrollable-list">
         {filteredData.map((item, i) => (
-          <li key={i} onClick={() => handleItemClick(item.items)}>
+          <li
+            className={`stencils-list ${theme}`}
+            key={i}
+            onClick={() => handleItemClick(item.items)}
+          >
             {item.itemName}
           </li>
         ))}

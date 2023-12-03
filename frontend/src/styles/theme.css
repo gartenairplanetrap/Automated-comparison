@@ -15,7 +15,7 @@
   border-color: var(--contrast-text);
 }
 
-/* .dark input {
+.dark input {
   background-color: var(--dark-background);
   color: var(--dark-text);
   border-color: var(--dark-border);
@@ -48,7 +48,7 @@
   background-color: var(--contrast-background);
   color: var(--contrast-text);
   border-color: var(--contrast-text);
-} */
+}
 
 .high-contrast .btn {
   background-color: var(--contrast-text);

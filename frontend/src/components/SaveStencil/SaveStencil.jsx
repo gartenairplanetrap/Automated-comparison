@@ -55,7 +55,7 @@ const SaveStencil = ({ stencil }) => {
             className="save-input-field"
             type="text"
             value={label}
-            onChange={(e) => setLabel(e.target.value)}
+            onChange={(e) => setLabel(e.target.value.trim())}
           />
         </label>
 
@@ -65,7 +65,7 @@ const SaveStencil = ({ stencil }) => {
             className="save-input-field"
             type="text"
             value={itemName}
-            onChange={(e) => setItemName(e.target.value)}
+            onChange={(e) => setItemName(e.target.value.trim())}
           />
         </label>
 
@@ -74,7 +74,7 @@ const SaveStencil = ({ stencil }) => {
           <select
             className="select-field"
             value={screenSize}
-            onChange={(e) => setScreenSize(e.target.value)}
+            onChange={(e) => setScreenSize(e.target.value.trim())}
           >
             <option value="15">15</option>
             <option value="12.9">12.9</option>
@@ -86,7 +86,7 @@ const SaveStencil = ({ stencil }) => {
           <select
             className="select-field"
             value={type}
-            onChange={(e) => setType(e.target.value)}
+            onChange={(e) => setType(e.target.value.trim())}
           >
             <option value="lhd">LHD</option>
             <option value="rhd">RHD</option>
@@ -98,7 +98,7 @@ const SaveStencil = ({ stencil }) => {
           <select
             className="select-box"
             value={prl}
-            onChange={(e) => setPrl(e.target.value)}
+            onChange={(e) => setPrl(e.target.value.trim())}
           >
             <option value="">Select PRL</option>
             <option value="f386">F386</option>

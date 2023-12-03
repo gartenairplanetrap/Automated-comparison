@@ -16,8 +16,6 @@ import {
 import { io } from "../server.js";
 import { Stencil } from "../models/stencil.js";
 
-import sharp from "sharp";
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -226,18 +224,14 @@ export async function compareImages(req, res) {
     });
     const result = comparison.getBuffer().toString("base64");
     const imageUrl = `data:image/png;base64,${result}`;
-    if (comparison.rawMisMatchPercentage > 0) {
-      mismatchResults.push({
-        imageName: req.files["image1"][0].originalname,
-        mismatchPercentage: comparison.rawMisMatchPercentage,
-      });
-    }
 
-    const table = await createExcelWorkbook(mismatchResults);
+    mismatchResults.push({
+      imageName: req.files["image1"][0].originalname,
+      mismatchPercentage: comparison.rawMisMatchPercentage,
+    });
 
     res.status(200).json({
       contentType: req.files["image1"][0].mimetype,
-      tableData: table,
       imageUrl,
       mismatchResults,
     });

@@ -4,6 +4,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import Jimp from "jimp";
 import { findSubfolderWithImages } from "./findSubfolderWithImages.js";
+import { Stencil } from "../models/stencil.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -25,9 +26,10 @@ export async function applyStencilsToImage(
 
     const inputImageFiles = await fs.promises.readdir(inputImage);
 
-    await Promise.all(
+    await Promise.allSettled(
       inputImageFiles.map(async (image) => {
-        const stencils = findStencils(image, screenSize, type, prl);
+        const stencils = await findStencils(image, screenSize, type, prl);
+        console.log("stencil", stencils);
         if (stencils.length > 0) {
           const imagePath = path.join(inputImage, image);
 
@@ -88,18 +90,23 @@ async function applyStencilsToSingleImage(
   }
 }
 
-function findStencils(itemName, screenSize, type, prl) {
+async function findStencils(itemName, screenSize, type, prl) {
   // Filter stencils based on the provided criteria
 
   const itemNameWithoutExtension = itemName.split(".").slice(0, -1);
+  try {
+    const stencils = await Stencil.find({});
 
-  const foundStencils = data.filter(
-    (stencil) =>
-      stencil.itemName === itemNameWithoutExtension[0] &&
-      stencil.screenSize == screenSize &&
-      stencil.type === type.toLowerCase() &&
-      stencil.prl === prl.toLowerCase()
-  );
+    const foundStencils = stencils.filter(
+      (stencil) =>
+        stencil.itemName.trim() === itemNameWithoutExtension[0].trim() &&
+        stencil.screenSize == screenSize &&
+        stencil.type === type.toLowerCase() &&
+        stencil.prl === prl.toLowerCase()
+    );
 
-  return foundStencils;
+    return foundStencils;
+  } catch (error) {
+    console.log(error);
+  }
 }
