@@ -24,7 +24,7 @@ const Header = () => {
               <a href="/stencil">Stencil</a>
             </li>
             <li>
-              <a href="/">Dashboard</a>
+              <a href="/">?????</a>
             </li>
           </ul>
         </nav>

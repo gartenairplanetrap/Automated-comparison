@@ -49,10 +49,37 @@ const UploadImages = () => {
     }
   };
 
+  const handleDrop = (event, setImage, setImageName, setImg) => {
+    event.preventDefault();
+    const file = event.dataTransfer.files[0];
+    setImg(file);
+    if (file) {
+      setImageName(file.name.split(".").slice(0, -1));
+      const reader = new FileReader();
+
+      reader.onload = () => {
+        setImage(reader.result);
+      };
+
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const allowDrop = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <div>
       <div className="upload-container">
-        <label htmlFor="img1" className="custom-file-input">
+        <label
+          htmlFor="img1"
+          className="custom-file-input"
+          onDrop={(event) =>
+            handleDrop(event, setImage1, setImage1Name, setImg1)
+          }
+          onDragOver={allowDrop}
+        >
           Select Image 1
         </label>
         <input
@@ -62,8 +89,14 @@ const UploadImages = () => {
           onChange={handleImage1Upload}
           accept="image/*"
         />
-
-        <label htmlFor="img2" className="custom-file-input">
+        <label
+          htmlFor="img2"
+          className="custom-file-input"
+          onDrop={(event) =>
+            handleDrop(event, setImage2, setImage2Name, setImg2)
+          }
+          onDragOver={allowDrop}
+        >
           Select Image 2
         </label>
         <input
@@ -78,6 +111,7 @@ const UploadImages = () => {
         <p>{image1Name}</p>
         <p>{image2Name}</p>
       </div>
+
       {image1 && image2 && (
         <Stencil image1={image1} image2={image2} img1={img1} img2={img2} />
       )}

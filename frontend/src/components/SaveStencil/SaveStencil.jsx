@@ -94,7 +94,7 @@ const SaveStencil = ({ stencil }) => {
           </select>
         </label>
         <label className="input-label">
-          Type:
+          PRL:
           <select
             className="select-box"
             value={prl}

@@ -44,15 +44,13 @@
   font-size: 26px;
 }
 
-/* Common Styles */
-
 .stencil-settings-box {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
   width: 100%;
-  margin: 0 auto; /* Center the box horizontally */
+  margin: 0 auto;
 }
 .submit-settings {
   width: 100%;
@@ -73,9 +71,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute; /* Add absolute position to the header */
-  top: 5px; /* Position it at the top */
-  right: 10px; /* Position it at the right */
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }
 
 .delete-stencil-button {
@@ -113,7 +111,7 @@ input[type="number"] {
 }
 
 span {
-  flex: 0.2; /* Adjust the span's width as needed */
+  flex: 0.2;
 }
 
 .btn {

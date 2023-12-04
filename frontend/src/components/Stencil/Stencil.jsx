@@ -65,7 +65,7 @@ const Stencil = ({ image1, image2, img1, img2 }) => {
   const handleCompareImages = async () => {
     if (!img1 || !img2) {
       console.error("Please provide both images and masks");
-      toast.Error("Please provide both images");
+      toast.error("Please provide both images");
       return;
     }
     setComparedImage("");
